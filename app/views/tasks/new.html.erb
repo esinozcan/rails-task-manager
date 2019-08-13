@@ -1,0 +1,16 @@
+<h1>Add a new Task</h1>
+
+ <%= form_for @task do |t| %>
+  <div>
+    <%= t.label :title %>
+    <%= t.text_field :title, placeholder: 'Do the laundry' %>
+  </div>
+
+  <div>
+    <%= t.label :details %>
+    <%= t.text_field :details %>
+  </div>
+
+  <%= t.submit "Submit" %>
+ <% end %>
+
